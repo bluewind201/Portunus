@@ -1,10 +1,48 @@
 # Portunus
 
-Windows IT 엔지니어를 위한 원격 접속·운영 도구입니다.
+**접속하고, 진단하고, 조치하는 IT 엔지니어의 작업 공간.**
+
+Portunus는 Windows에서 서버·네트워크·DB·보안 장비·클라우드를 운영하는 엔지니어를 위한 원격 접속·운영 도구입니다.
 
 **[최신 설치 파일 다운로드](https://github.com/bluewind201/Portunus/releases/latest)**
 
 SSH·SFTP·Telnet·시리얼·RDP·VNC·RustDesk, Proxmox·IPMI·SNMP, Docker·Kubernetes, DB·HTTP·AWS 관리와 네트워크 진단을 한곳에서 사용합니다.
+
+## Portunus의 강점
+
+| 강점 | 실제 작업에서 달라지는 점 |
+|---|---|
+| **접속에서 조치까지 이어지는 흐름** | IP 검색 결과를 자산으로 등록하고, 저장한 SSH 연결로 터미널·SFTP·Docker·Kubernetes 작업을 이어갑니다. AWS RDS 접속 정보도 DB 탐색기로 넘깁니다. |
+| **엔지니어의 입력을 돕는 터미널** | Linux·Cisco·DB 문맥에 맞는 하위 명령·옵션·인수 추천, 다음 단계 안내, vim 단축키 안내를 제공합니다. 위험 명령은 실행 전 확인하도록 설정할 수 있습니다. |
+| **여러 장비를 함께 보는 화면** | 2~4분할, 탭을 끌어 별도 창으로 분리·합치기, 여러 터미널 동시 입력, 작업 세트 저장으로 반복 작업을 줄입니다. |
+| **물리 서버부터 클라우드까지** | IPMI 하드웨어 상태·전원, Proxmox VM 콘솔, Docker·k8s/k3s, DB, AWS EC2·RDS·S3를 각 관리 화면에서 다룹니다. |
+| **별도 전용 에이전트 없이 하는 점검** | IP 검색·DNS·TCP·HTTPS 일괄 점검은 대상에 Portunus 에이전트를 설치하지 않습니다. 서버 관리는 기존 SSH·API·SNMP·BMC 인터페이스를 활용합니다. |
+| **접속 정보 보관과 이관** | Argon2id 기반 마스터 암호와 AES-256-GCM 금고, CSV·Excel 가져오기, 암호 없는 CSV 또는 암호화 세션 백업을 제공합니다. |
+
+**[전체 기능 안내 →](docs/FEATURES.md)** · [기능 소개 영상 →](https://github.com/bluewind201/Portunus/releases/download/v1.4.0/portunus-features-v1.4.mp4)
+
+## 어떤 작업을 할 수 있나요?
+
+| 분야 | 주요 기능 |
+|---|---|
+| 원격 접속·파일 | SSH·Telnet·시리얼·Raw TCP, SFTP, 외부 RDP·RustDesk, 내장 VNC, 점프 호스트·SSH 터널 |
+| 터미널 생산성 | 문맥별 자동 완성·다음 단계·명령 스니펫·위험 명령 확인·vim/less/top/nano 안내·로그 |
+| 작업 공간 | 세션 폴더·검색·즐겨찾기·환경 표시, 2~4분할·단독 창·동시 입력·작업 세트 |
+| 네트워크 진단 | IP 대역 검색·경로 분석·핑·경로 추적·포트 스캔·DNS·SNMP·장비 통합 점검·패킷 분석 |
+| 서버·가상화 | Docker·Kubernetes/k3s/microk8s·Proxmox VE·IPMI/BMC |
+| DB·API | PostgreSQL·MySQL/MariaDB·SQLite, SQL 조회·변경·운영 점검, HTTP 요청·URL 일괄 확인 |
+| AWS | IAM 키·기존 CLI 프로필·SSO, EC2·RDS·S3·VPC·보안 그룹·IAM 점검·SSM 접속 |
+| 운영 지원 | 설정 비교·Nmap·VPN 연결 상태·내장 SFTP/TFTP/Syslog 서버 |
+| 계산·변환 | 서브넷·MAC·Wake-on-LAN, JSON·Base64·URL·JWT·Unix 시간·SHA-256 |
+| 보관·개인화 | 암호 금고·저장 암호 일괄 변경·가져오기/내보내기·14개 테마·선택형 PC 정보·서명 검증 업데이트 |
+
+## 전체 기능 소개 영상
+
+[![Portunus 전체 기능 소개 — 접속부터 진단·조치까지](media/05-feature-overview.png)](https://github.com/bluewind201/Portunus/releases/download/v1.4.0/portunus-features-v1.4.mp4)
+
+**[분야별 기능과 강점을 살펴보기 (MP4, 1분 38초)](https://github.com/bluewind201/Portunus/releases/download/v1.4.0/portunus-features-v1.4.mp4)**
+
+원격 접속, 터미널 입력 보조, 네트워크 진단, 서버·DB·AWS, 보관·설정까지 기능별 소개 카드와 예시 화면으로 안내합니다. 아래 24초 영상은 주요 화면의 조작을 짧게 보여주는 데모입니다.
 
 ## 24초로 살펴보기
 
