@@ -1,5 +1,9 @@
 # Portunus
 
+**한국어** · [English](README.en.md)
+
+> **English:** Portunus is a Windows remote access and operations workspace for IT engineers — SSH, SFTP, RDP, VNC, Proxmox, IPMI, SNMP, Docker, Kubernetes, databases, HTTP, AWS and network diagnostics in one app. The app is available in English (Settings → Display → Language). [Read the English introduction →](README.en.md)
+
 **접속하고, 진단하고, 조치하는 IT 엔지니어의 작업 공간.**
 
 Portunus는 Windows에서 서버·네트워크·DB·보안 장비·클라우드를 운영하는 엔지니어를 위한 원격 접속·운영 도구입니다.
@@ -34,7 +38,7 @@ SSH·SFTP·Telnet·시리얼·RDP·VNC·RustDesk, Proxmox·IPMI·SNMP, Docker·K
 | AWS | IAM 키·기존 CLI 프로필·SSO, EC2·RDS·S3·VPC·보안 그룹·IAM 점검·SSM 접속 |
 | 운영 지원 | 설정 비교·Nmap·VPN 연결 상태·내장 SFTP/TFTP/Syslog 서버 |
 | 계산·변환 | 서브넷·MAC·Wake-on-LAN, JSON·Base64·URL·JWT·Unix 시간·SHA-256 |
-| 보관·개인화 | 암호 금고·저장 암호 일괄 변경·가져오기/내보내기·14개 테마·선택형 PC 정보·서명 검증 업데이트 |
+| 보관·개인화 | 암호 금고·저장 암호 일괄 변경·가져오기/내보내기·14개 테마·선택형 PC 정보·서명 검증 업데이트·한국어/영어 화면 |
 
 ## 전체 기능 소개 영상
 
@@ -83,11 +87,17 @@ CIDR 또는 시작·끝 주소로 범위를 지정하고, 응답과 열린 포�
 ## 설치 및 업데이트
 
 - Windows 11 x64. 설치 파일은 사용자 계정에 설치되며 WebView2 설치본을 포함합니다.
+- 화면 언어는 처음 실행할 때 Windows 표시 언어를 따르며, 설정 → 화면 → 언어 · Language에서 한국어·English로 바꿀 수 있습니다.
 - 설치 후 설정 → 업데이트에서 새 버전을 확인합니다. 1.4부터 시작 시와 6시간마다 자동 확인하며 설치 전에 연결 종료·재시작을 확인합니다.
 - 1.3 이하 사용자는 1.4 이상을 한 번 직접 설치해야 합니다.
 - 업데이트 파일은 앱에 내장된 공개 키로 서명을 검증합니다. 설치 전에 사용자 DB를 백업하고 기존 세션·암호 금고·설정을 유지합니다.
 - `SHA256SUMS.txt`로 설치 파일 해시를 비교할 수 있습니다. `.sig`와 `latest.json`은 앱 업데이트용입니다.
 - Windows 코드 서명 인증서의 신뢰와 SmartScreen 평판은 업데이트 서명과 별개입니다. 배포 파일의 게시자·해시와 다운로드 출처를 확인하세요.
+
+## 1.5 변경
+
+- 영어 화면: 설정 → 화면 → 언어 · Language에서 한국어·English를 고릅니다. 메뉴·안내·확인 창·알림·오류와 터미널 명령 추천·명령 가이드까지 바뀝니다(IP 대역 검색 화면은 한국어 유지).
+- 영어 소개 문서(README.en.md)를 추가했습니다.
 
 ## 1.4 변경
 
