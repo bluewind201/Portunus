@@ -68,7 +68,8 @@ The videos and screenshots show the Korean UI with silent Korean captions. They 
 - Check for new versions in Settings → Updates. Since 1.4 the app checks automatically at startup and every 6 hours, and asks before closing connections and restarting to install.
 - Users on 1.3 or earlier need to install 1.4 or later manually once.
 - Update files are verified with a public key built into the app. The user DB is backed up before installing, and existing sessions, the password vault and settings are kept.
-- Compare installer hashes with `SHA256SUMS.txt`. The `.sig` and `latest.json` files are used by the in-app updater.
+- To run without installing, download `Portunus-<version>-portable.zip`, extract it to any folder (a USB drive works too) and run `portunus.exe`. Sessions, the password vault and settings are all stored in the `portunus-data` folder next to it, so nothing is left on the PC and the folder can be moved as a whole. WebView2 is required (preinstalled on most Windows 10 and 11 PCs). The portable version only tells you about new versions; to update, close the app and replace `portunus.exe` and the `tools` folder with the ones from the new zip (keep `portunus-data`).
+- Compare installer and portable zip hashes with `SHA256SUMS.txt`. The `.sig` and `latest.json` files are used by the in-app updater.
 - Trust in the Windows code-signing certificate and SmartScreen reputation are separate from the update signature. Check the publisher, the hash and where you downloaded the file from.
 
 ## What's new in 1.5
