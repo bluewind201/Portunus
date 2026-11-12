@@ -72,6 +72,15 @@ The videos and screenshots show the Korean UI with silent Korean captions. They 
 - Compare installer and portable zip hashes with `SHA256SUMS.txt`. The `.sig` and `latest.json` files are used by the in-app updater.
 - Trust in the Windows code-signing certificate and SmartScreen reputation are separate from the update signature. Check the publisher, the hash and where you downloaded the file from.
 
+## What's new in 1.5.4
+
+- **Better suggestion menu placement:** Sits below the cursor when room allows, or to the right/left of the cursor. When opening above, it hugs the right edge to avoid covering previous commands and file names on the left.
+- **Enhanced glass transparency readability:** Applied a 98% frosted glass layer to the suggestion popup so terminal text no longer bleeds through. Greatly improved ghost autocomplete text contrast.
+- **Apple-inspired design:** Added "macOS Dark (Apple)" and "macOS Light (Apple)" themes with refined rim lighting, soft depth shadows, and pill-shaped segmented controls.
+- **Port range specification & multi-target inspection:** Added Start-End port range inputs with quick range insertion. Supports multiple targets, IP ranges (e.g. 10.0.0.1-20), and CIDR notation (/28).
+- **Full inspection status:** Identifies Open, Closed, and No response states with filters (All / Open only) and quick clipboard copy for audit reports.
+- **Custom port range in comprehensive inspection:** The comprehensive inspection tool now also accepts custom port ranges (e.g. 8000-8010).
+
 ## What's new in 1.5
 
 - **English UI.** Choose Korean or English in Settings → Display → Language. Menus, dialogs, notifications, errors, terminal suggestions and command guides are all translated. The IP range discovery screen is still Korean only.
